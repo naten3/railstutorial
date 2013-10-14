@@ -792,3 +792,10 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-13 18:00:18 -0500
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-13 18:00:18 -0500
   [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (2.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (3.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMicroposts (20131014005026)
+  [1m[35m (1.1ms)[0m  BEGIN
+  [1m[36m (44.4ms)[0m  [1mCREATE TABLE "microposts" ("id" serial primary key, "content" character varying(255), "user_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (8.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20131014005026"]]
+  [1m[36m (21.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (4.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
